@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFD1DC"> <!-- Light Pink Background -->
+
+    <!-- Countdown Banner -->
+    <LinearLayout
+        android:id="@+id/llCountdownBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCountdownLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Big Event Starts In:"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvCountdownTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00d 00h 00m 00s"
+            android:textColor="#FFD1DC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvCountdownEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvWelcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Botho Expo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"/>
+
+        <!-- Persistent Reminder Section -->
+        <TextView
+            android:id="@+id/tvReminderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soon Events (Reminders):"
+            android:textStyle="bold"
+            android:textColor="#D81B60"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hsvReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/llReminderContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <!-- Reminders will be added here dynamically -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvRegCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Registrations: 0"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search events..."
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvEvents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
+
+</LinearLayout>

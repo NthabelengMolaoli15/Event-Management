@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Student Profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/etProfileUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <EditText
+            android:id="@+id/etProfileStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student ID"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <EditText
+            android:id="@+id/etProfilePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textEmailAddress"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:boxBackgroundMode="none"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/etProfilePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="New Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:minHeight="48dp"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Registrations (Gallery View):"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"/>
+
+        <GridView
+            android:id="@+id/gvMyRegistrations"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnClearRegistrations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear All Registrations"
+            android:minHeight="48dp"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

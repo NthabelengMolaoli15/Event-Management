@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NthabelengMolaoli2333784" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#D81B60</item>
+        <item name="colorPrimaryDark">#AD1457</item>
+        <item name="colorAccent">#000000</item>
+        <!-- Global Light Pink Background -->
+        <item name="android:windowBackground">#FFD1DC</item>
+    </style>
+
+    <style name="Theme.NthabelengMolaoli2333784" parent="Base.Theme.NthabelengMolaoli2333784" />
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFD1DC"> <!-- Light Pink Background -->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch Expo Highlights:"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button android:id="@+id/btnVideo1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video 1" android:layout_margin="4dp" android:backgroundTint="#000000" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnVideo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video 2" android:layout_margin="4dp" android:backgroundTint="#000000" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnVideo3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video 3" android:layout_margin="4dp" android:backgroundTint="#000000" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShareVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Current Video"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen to Expo Music:"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button android:id="@+id/btnMusic1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Music 1" android:layout_margin="4dp" android:backgroundTint="#000000" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnMusic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Music 2" android:layout_margin="4dp" android:backgroundTint="#000000" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnStopMusic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stop" android:layout_margin="4dp" android:backgroundTint="#757575" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShareMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Current Music"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

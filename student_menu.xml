@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Edit Student Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_messenger"
+        android:title="Messenger &amp; Student Directory"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_personal_inbox"
+        android:title="My Personal Inbox (Student Emails)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_inbox"
+        android:title="Expo Notifications (Admin Updates)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_map"
+        android:title="View Campus Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_media"
+        android:title="Watch Videos &amp; Music"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_bluetooth"
+        android:title="Bluetooth Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_go_back"
+        android:title="Go Back"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout (Back to Login)"
+        app:showAsAction="never" />
+</menu>

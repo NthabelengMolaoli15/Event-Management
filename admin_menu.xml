@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_admin_inbox"
+        android:title="Student Enquiries (Inbox)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_view_students_system"
+        android:title="View All Registered Students"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_summary"
+        android:title="Expo Summary Report"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_map_admin"
+        android:title="View Campus Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_go_back"
+        android:title="Go Back"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_logout_admin"
+        android:title="Logout (Back to Login)"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/ivAdminEventImage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/assignment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvAdminEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvAdminEventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2025-01-01"
+                android:textSize="12sp"
+                android:textColor="#666666"/>
+
+            <TextView
+                android:id="@+id/tvAdminRegStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reg: 0/50"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#D81B60"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnUpdateEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Edit" />
+
+                <ImageButton
+                    android:id="@+id/btnViewStudents"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Students" />
+
+                <ImageButton
+                    android:id="@+id/btnAdminMap"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_dialog_map"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Map" />
+
+                <ImageButton
+                    android:id="@+id/btnDeleteEvent"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
